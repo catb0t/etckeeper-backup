@@ -3,26 +3,37 @@ APT::NeverAutoRemove
 {
    "^linux-image-4\.10\.0-20-generic$";
    "^linux-image-4\.10\.0-21-generic$";
+   "^linux-image-4\.8\.0-44-generic$";
    "^linux-headers-4\.10\.0-20-generic$";
    "^linux-headers-4\.10\.0-21-generic$";
+   "^linux-headers-4\.8\.0-44-generic$";
    "^linux-image-extra-4\.10\.0-20-generic$";
    "^linux-image-extra-4\.10\.0-21-generic$";
+   "^linux-image-extra-4\.8\.0-44-generic$";
    "^linux-signed-image-4\.10\.0-20-generic$";
    "^linux-signed-image-4\.10\.0-21-generic$";
+   "^linux-signed-image-4\.8\.0-44-generic$";
    "^kfreebsd-image-4\.10\.0-20-generic$";
    "^kfreebsd-image-4\.10\.0-21-generic$";
+   "^kfreebsd-image-4\.8\.0-44-generic$";
    "^kfreebsd-headers-4\.10\.0-20-generic$";
    "^kfreebsd-headers-4\.10\.0-21-generic$";
+   "^kfreebsd-headers-4\.8\.0-44-generic$";
    "^gnumach-image-4\.10\.0-20-generic$";
    "^gnumach-image-4\.10\.0-21-generic$";
+   "^gnumach-image-4\.8\.0-44-generic$";
    "^.*-modules-4\.10\.0-20-generic$";
    "^.*-modules-4\.10\.0-21-generic$";
+   "^.*-modules-4\.8\.0-44-generic$";
    "^.*-kernel-4\.10\.0-20-generic$";
    "^.*-kernel-4\.10\.0-21-generic$";
+   "^.*-kernel-4\.8\.0-44-generic$";
    "^linux-backports-modules-.*-4\.10\.0-20-generic$";
    "^linux-backports-modules-.*-4\.10\.0-21-generic$";
+   "^linux-backports-modules-.*-4\.8\.0-44-generic$";
    "^linux-tools-4\.10\.0-20-generic$";
    "^linux-tools-4\.10\.0-21-generic$";
+   "^linux-tools-4\.8\.0-44-generic$";
 };
 /* Debug information:
 # dpkg list:
@@ -32,24 +43,22 @@ rc  linux-image-4.8.0-28-generic                                     4.8.0-28.30
 rc  linux-image-4.8.0-30-generic                                     4.8.0-30.32                                 amd64        Linux kernel image for version 4.8.0 on 64 bit x86 SMP
 rc  linux-image-4.8.0-32-generic                                     4.8.0-32.34                                 amd64        Linux kernel image for version 4.8.0 on 64 bit x86 SMP
 rc  linux-image-4.8.0-41-generic                                     4.8.0-41.44                                 amd64        Linux kernel image for version 4.8.0 on 64 bit x86 SMP
-ii  linux-image-4.8.0-44-generic                                     4.8.0-44.47                                 amd64        Linux kernel image for version 4.8.0 on 64 bit x86 SMP
+ri  linux-image-4.8.0-44-generic                                     4.8.0-44.47                                 amd64        Linux kernel image for version 4.8.0 on 64 bit x86 SMP
 ii  linux-image-extra-4.10.0-20-generic                              4.10.0-20.22                                amd64        Linux kernel extra modules for version 4.10.0 on 64 bit x86 SMP
-iF  linux-image-extra-4.10.0-21-generic                              4.10.0-21.23                                amd64        Linux kernel extra modules for version 4.10.0 on 64 bit x86 SMP
+ii  linux-image-extra-4.10.0-21-generic                              4.10.0-21.23                                amd64        Linux kernel extra modules for version 4.10.0 on 64 bit x86 SMP
 rc  linux-image-extra-4.8.0-30-generic                               4.8.0-30.32                                 amd64        Linux kernel extra modules for version 4.8.0 on 64 bit x86 SMP
 rc  linux-image-extra-4.8.0-32-generic                               4.8.0-32.34                                 amd64        Linux kernel extra modules for version 4.8.0 on 64 bit x86 SMP
 rc  linux-image-extra-4.8.0-41-generic                               4.8.0-41.44                                 amd64        Linux kernel extra modules for version 4.8.0 on 64 bit x86 SMP
-ii  linux-image-extra-4.8.0-44-generic                               4.8.0-44.47                                 amd64        Linux kernel extra modules for version 4.8.0 on 64 bit x86 SMP
-iU  linux-image-generic                                              4.10.0.21.23                                amd64        Generic Linux kernel image
+rH  linux-image-extra-4.8.0-44-generic                               4.8.0-44.47                                 amd64        Linux kernel extra modules for version 4.8.0 on 64 bit x86 SMP
+ii  linux-image-generic                                              4.10.0.21.23                                amd64        Generic Linux kernel image
 # list of installed kernel packages:
 4.10.0-20-generic 4.10.0-20.22
 4.10.0-21-generic 4.10.0-21.23
-4.8.0-44-generic 4.8.0-44.47
 # list of different kernel versions:
 4.10.0-21.23
 4.10.0-20.22
-4.8.0-44.47
-# Installing kernel: 4.10.0-21.23 (4.10.0-21-generic)
-# Running kernel: 4.10.0-20.22 (4.10.0-20-generic)
+# Installing kernel:  (4.8.0-44-generic)
+# Running kernel: 4.10.0-21.23 (4.10.0-21-generic)
 # Last kernel: 4.10.0-21.23
 # Previous kernel: 4.10.0-20.22
 # Kernel versions list to keep:
@@ -58,4 +67,5 @@ iU  linux-image-generic                                              4.10.0.21.2
 # Kernel packages (version part) to protect:
 4\.10\.0-20-generic
 4\.10\.0-21-generic
+4\.8\.0-44-generic
 */
