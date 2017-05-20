@@ -1,0 +1,107 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          iwatch
+# Required-Start:    $remote_fs
+# Required-Stop:     $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: iwatch daemon control
+# Description:       Start iwatch, realtime filesystem monitoring
+#                    program using inotify
+### END INIT INFO
+
+set -eu
+
+##############################################################################
+
+CONFIG_FILE=/etc/iwatch/iwatch.xml
+DEBIANCONFIG=/etc/default/iwatch
+IWATCHD=/usr/bin/iwatch
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+PIDFILE=/var/run/iwatch.pid
+START_DAEMON=true
+
+test -x $IWATCHD || exit 0
+
+test -f $DEBIANCONFIG && . $DEBIANCONFIG
+
+. /lib/lsb/init-functions
+
+is_true()
+{
+  case "${1:-}" in
+    [Yy]es|[Yy]|1|[Tt]|[Tt]rue) return 0;;
+    *) return 1;
+  esac
+}
+
+##############################################################################
+
+case "${1:-}" in
+    start)
+      if [ -f "$PIDFILE" ] ; then
+         log_warning_msg "Warning: iwatch daemon already running, doing nothing therefore."
+         exit 0
+      fi
+
+      if is_true $START_DAEMON; then
+         log_daemon_msg "Starting iwatch daemon" "iwatch"
+         set +e
+         $IWATCHD -f $CONFIG_FILE -p $PIDFILE -d
+         RC=$?
+         set -e
+         log_end_msg $RC
+      else
+         log_warning_msg "Not starting iwatch daemon as startup is deactivated via /etc/default/iwatch"
+      fi
+      ;;
+
+    stop)
+      if [ -f "$PIDFILE" ] ; then
+         log_daemon_msg "Stopping iwatch daemon" "iwatch"
+         set +e
+         start-stop-daemon -K -p $PIDFILE
+         RC=$?
+         rm -f $PIDFILE
+         set -e
+         log_end_msg $RC
+      else
+         log_warning_msg "iwatch daemon already stopped."
+      fi
+      ;;
+
+    status)
+      [ -f "$PIDFILE" ] && PROCESS="$(cat $PIDFILE)" || PROCESS=''
+      if [ -n "$PROCESS" ] ; then
+         log_success_msg "iwatch daemon with pid $PROCESS is running"
+         exit 0
+      else
+         log_warning_msg "Could not find a running iwatch daemon."
+         exit 1
+      fi
+      ;;
+
+    restart)
+      $0 stop
+      $0 start
+      ;;
+
+    reload|force-reload)
+      if [ -f "$PIDFILE" ] ; then
+         log_daemon_msg "Reloading iwatch daemon" "iwatch"
+         start-stop-daemon --stop --signal 1 --pidfile $PIDFILE
+         RC=$?
+         log_end_msg $RC
+      else
+         log_warning_msg "Could not find a running iwatch daemon."
+         exit 1
+      fi
+      ;;
+
+    *)
+      echo "Usage: ${0:-} {start|stop|restart|reload|force-reload|status}" >&2
+      exit 1
+    ;;
+esac
+
+exit 0

@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/system76-dev/stable/ubuntu zesty main # disabled on upgrade to zesty
+# deb-src http://ppa.launchpad.net/system76-dev/stable/ubuntu zesty main # disabled on upgrade to zesty

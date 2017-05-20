@@ -1,0 +1,9 @@
+<apps>
+  <web-application>
+    <name>monodoc</name>
+    <vpath>/monodoc</vpath>
+    <path>/usr/share/monodoc/web</path>
+    <vhost>localhost</vhost>
+    <port>80</port>
+  </web-application>
+</apps>

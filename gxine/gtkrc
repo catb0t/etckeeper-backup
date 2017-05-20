@@ -1,0 +1,183 @@
+# Info bar colours
+style "gxine_info"
+{
+  fg[NORMAL] = "#4E4EFF"
+  bg[NORMAL] = "#000000"
+  fg[ACTIVE] = "#AA3434"
+  bg[ACTIVE] = "#000000"
+}
+
+# Time widget colours
+style "gxine_time" = "gxine_info"
+{
+}
+
+# Top line's text style & size
+style "gxine_large"
+{
+  font_name = "bold 12"
+}
+
+# Other lines' text style & size
+style "gxine_small"
+{
+  font_name = "8"
+}
+
+# JS text area style
+style "gxine_js_edit"
+{
+  font_name = "mono"
+}
+
+style "gxine_icons"
+{
+# 0.5.0/0.5.1 compatibility cruft
+  stock["gxine-media-playlist"] = { { @"gtk-index" } }
+# Uncomment the following lines if you're using a suitable theme, e.g. Tango
+#  stock["gxine-media-speaker"] = { { @"audio-volume-high" } }
+#  stock["gxine-media-speaker-mute"] = { { @"audio-volume-muted" } }
+}
+class "GtkWidget" style "gxine_icons"
+
+
+widget "*.gxine_info*" style "gxine_info"
+widget "*.gxine_time*" style "gxine_time"
+
+widget "*.gxine_info_large" style "gxine_large"
+widget "*.gxine_time_large" style "gxine_large"
+
+widget "*.gxine_info_small" style "gxine_small"
+widget "*.gxine_time_small" style "gxine_small"
+
+widget "*.gxine_js_edit" style "gxine_js_edit"
+
+
+style "gxine_button_red"
+{
+  fg[NORMAL]	  = "#000000"
+  fg[ACTIVE]	  = "#000000"
+  fg[PRELIGHT]	  = "#000000"
+  fg[SELECTED]	  = "#000000"
+  fg[INSENSITIVE] = "#555555"
+  bg[NORMAL]	  = "#EE2222"
+  bg[ACTIVE]	  = "#FF9999"
+  bg[PRELIGHT]	  = "#FF5D5D"
+  bg[SELECTED]	  = "#EE2222"
+  bg[INSENSITIVE] = "#AA5555"
+}
+widget "*.gxine_button_red" style "gxine_button_red"
+
+style "gxine_button_yellow"
+{
+  fg[NORMAL]	  = "#000000"
+  fg[ACTIVE]	  = "#000000"
+  fg[PRELIGHT]	  = "#000000"
+  fg[SELECTED]	  = "#000000"
+  fg[INSENSITIVE] = "#555555"
+  bg[NORMAL]	  = "#DDDD00"
+  bg[ACTIVE]	  = "#EEEE88"
+  bg[PRELIGHT]	  = "#EEEE55"
+  bg[SELECTED]	  = "#DDDD00"
+  bg[INSENSITIVE] = "#AAAA55"
+}
+widget "*.gxine_button_yellow" style "gxine_button_yellow"
+
+style "gxine_button_green"
+{
+  fg[NORMAL]	  = "#000000"
+  fg[ACTIVE]	  = "#000000"
+  fg[PRELIGHT]	  = "#000000"
+  fg[SELECTED]	  = "#000000"
+  fg[INSENSITIVE] = "#555555"
+  bg[NORMAL]	  = "#00EE00"
+  bg[ACTIVE]	  = "#88FF88"
+  bg[PRELIGHT]	  = "#55FF55"
+  bg[SELECTED]	  = "#00EE00"
+  bg[INSENSITIVE] = "#55AA55"
+}
+widget "*.gxine_button_green" style "gxine_button_green"
+
+style "gxine_button_blue"
+{
+  fg[NORMAL]	  = "#000000"
+  fg[ACTIVE]	  = "#000000"
+  fg[PRELIGHT]	  = "#000000"
+  fg[SELECTED]	  = "#000000"
+  fg[INSENSITIVE] = "#555555"
+  bg[NORMAL]	  = "#0088EE"
+  bg[ACTIVE]	  = "#88CCFF"
+  bg[PRELIGHT]	  = "#55AAFF"
+  bg[SELECTED]	  = "#0088EE"
+  bg[INSENSITIVE] = "#5588AA"
+}
+widget "*.gxine_button_blue" style "gxine_button_blue"
+
+# Makes the full-screen toolbar have a dark background.
+# Remove (or prefix with '#') /* */ to activate.
+/*
+style "fs_toolbar"
+{
+  fg[NORMAL]	  = "#eeeeee"
+  fg[ACTIVE]	  = "#ffffff"
+  fg[PRELIGHT]	  = "#ffffff"
+  fg[SELECTED]	  = "#ffffff"
+  fg[INSENSITIVE] = "#aaaaaa"
+  bg[NORMAL]	  = "#222222"
+  bg[ACTIVE]	  = "#222222"
+  bg[PRELIGHT]	  = "#222222"
+  bg[SELECTED]	  = "#222222"
+  bg[INSENSITIVE] = "#222222"
+
+  text[NORMAL]	  = "#eeeeee"
+  text[ACTIVE]	  = "#ffffff"
+  text[PRELIGHT]  = "#ffffff"
+  text[SELECTED]  = "#ffffff"
+  text[INSENSITIVE] = "#aaaaaa"
+  base[NORMAL]	  = "#222222"
+  base[ACTIVE]	  = "#222222"
+  base[PRELIGHT]  = "#222222"
+  base[SELECTED]  = "#222222"
+  base[INSENSITIVE] = "#222222"
+}
+
+style "fs_button"
+{
+  bg[NORMAL]	  = "#333333"
+  bg[ACTIVE]	  = "#555555"
+  bg[PRELIGHT]	  = "#666666"
+  bg[SELECTED]	  = "#444444"
+  bg[INSENSITIVE] = "#222222"
+}
+
+style "fs_slider"
+{
+  fg[NORMAL]	  = "#444444"
+  fg[ACTIVE]	  = "#444444"
+  fg[PRELIGHT]	  = "#444444"
+  fg[SELECTED]	  = "#444444"
+  fg[INSENSITIVE] = "#444444"
+  bg[NORMAL]	  = "#444444"
+  bg[ACTIVE]	  = "#111111"
+  bg[PRELIGHT]	  = "#555555"
+  bg[SELECTED]	  = "#444444"
+  bg[INSENSITIVE] = "#444444"
+}
+
+style "fs_toolbar_info" = "gxine_info"
+{
+  bg[NORMAL]	= "#222222"
+}
+
+style "fs_toolbar_time" = "gxine_time"
+{
+  bg[NORMAL]	= "#222222"
+}
+
+widget "fs_toolbar" style "fs_toolbar"
+widget "fs_toolbar.*.gxine_*" style "fs_toolbar_info"
+widget "fs_toolbar.*.controls*" style "fs_toolbar"
+
+widget "fs_toolbar.*.controls.*Button" style "fs_button"
+widget "fs_toolbar.*.controls.*HScale" style "fs_slider"
+*/

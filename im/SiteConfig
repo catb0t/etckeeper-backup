@@ -1,0 +1,4 @@
+FromDomain=oryx-kitten	# domain of your mail address
+ToDomain=oryx-kitten	# domain when domain part is omitted
+Org=	# for news posting
+MBoxStyle=	# qmail or not

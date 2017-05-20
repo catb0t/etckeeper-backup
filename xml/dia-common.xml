@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD XML Catalogs V1.0//EN"
+  "file:///usr/share/xml/schema/xml-core/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<delegateSystem systemIdStartString="http://www.daa.com.au/~james/dia-shape-ns" catalog="file:///usr/share/xml/dia/shape.dtd"/>
+<delegateSystem systemIdStartString="http://www.lysator.liu.se/~alla/dia/" catalog="file:///usr/share/xml/dia/diagram.dtd"/>
+<delegateSystem systemIdStartString="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns" catalog="file:///usr/share/xml/dia/sheet.dtd"/>
+</catalog>

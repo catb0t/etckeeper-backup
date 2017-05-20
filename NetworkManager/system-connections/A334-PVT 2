@@ -1,0 +1,26 @@
+[connection]
+id=A334-PVT 2
+uuid=16c5980a-1f36-416f-a0e1-4b33ca6d4e72
+type=wifi
+permissions=
+secondaries=
+
+[wifi]
+cloned-mac-address=24:FD:52:58:93:16
+hidden=true
+mac-address=00:28:F8:34:51:0C
+mac-address-blacklist=
+mac-address-randomization=0
+mode=infrastructure
+seen-bssids=
+ssid=A334-PVT
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=auto

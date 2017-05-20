@@ -1,0 +1,16 @@
+# Defaults for mono-xsp4, official version
+# sourced by /etc/init.d/mono-xsp4
+
+# Should we start it?
+start_boot=true
+
+# User and group by default
+user=www-data
+group=www-data
+
+# Default port
+port=8084
+address=0.0.0.0
+
+# Directory for config files
+config_files=/etc/xsp4

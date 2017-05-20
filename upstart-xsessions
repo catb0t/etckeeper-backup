@@ -1,0 +1,3 @@
+# xsessions listed below are run inside an Upstart user session.
+unity8-x11
+unity8-mir

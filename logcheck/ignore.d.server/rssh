@@ -1,0 +1,6 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: allowing [[:alnum:]]+ to (all users|user [^[:space:]]+)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: cmd '[[:alnum:]]+' approved$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: line [0-9]+: configuring user [^[:space:]]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: setting [^[:space:]]+ umask to [0-9]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: setting log facility to LOG_USER$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ rssh\[[0-9]+\]: setting umask to [0-9]+$

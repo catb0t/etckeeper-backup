@@ -1,0 +1,11 @@
+-- 
+## ======================================================================
+## /etc/sgml/docbook-mathml.cat : SGML Open Style centralized catalog
+## ======================================================================
+## Please use update-catalog(8) to modify this file.
+## ======================================================================
+--
+CATALOG /usr/share/xml/docbook/custom/mathml/catalog
+CATALOG /usr/share/xml/docbook/custom/mathml/1.0/catalog
+CATALOG /usr/share/xml/docbook/custom/mathml/1.1b1/catalog
+CATALOG /usr/share/xml/docbook/custom/mathml/1.1CR1/catalog

@@ -1,0 +1,42 @@
+<vbox spacing="0" padding="0">
+  <hbox spacing="0" padding="0" fill="1">
+   <time />
+   <title box-expand="1" />
+  </hbox>
+  <hbox name="controls" fill="1">
+   <image id="__js.wi" stock="gtk-dialog-info" size="menu" listen="__js"
+	  onchange="widget.__js.wi.set_show (__js.v == 1, true)"
+	  onshow="if (__js.v != 1) callback ('widget.__js.wi.set_show (false)');" />
+   <image id="__js.wq" stock="gtk-dialog-question" size="menu" listen="__js"
+	  onchange="widget.__js.wq.set_show ((__js.v &amp; ~1) == 2, true)"
+	  onshow="if ((__js.v &amp; ~1) != 2) callback ('widget.__js.wq.set_show (false)');" />
+   <image id="__js.ww" stock="gtk-dialog-warning" size="menu" listen="__js"
+	  onchange="widget.__js.ww.set_show ((__js.v &amp; ~3) == 4, true)"
+	  onshow="if ((__js.v &amp; ~3) != 4) callback ('widget.__js.ww.set_show (false)');" />
+   <image id="__js.we" stock="gtk-dialog-error" size="menu" listen="__js"
+	  onchange="widget.__js.we.set_show ((__js.v &amp; ~7) == 8, true)"
+	  onshow="if ((__js.v &amp; ~7) != 8) callback ('widget.__js.we.set_show (false)');" />
+   <control type="stream" box-expand="1" />
+  </hbox>
+  <hbox name="controls" box-padding="2">
+   <control type="play" />
+   <control type="forward" />
+   <control type="pause" />
+   <control type="stop" />
+   <button image="gtk-index" relief="none" tip="~Show/hide the playlist"
+	   onclick="playlist_show ();" accept-drop="1" autoplay="0"
+	   />
+   <button image="gtk-properties" relief="none" tip="~Show/hide the A/V controls"
+	   onclick="settings_show ();"
+	   />
+   <label text="" box-expand="1" width="20" />
+   <end />
+   <hbox spacing="0" padding="0">
+    <image stock="gxine-settings-audio-channel" />
+    <control type="audio channel" />
+   </hbox>
+   <control type="volume" vertical="1" popup="1" window-height="120"
+	    inverted="1" image="gxine-settings-volume" relief="none" />
+   <control type="mute" />
+  </hbox>
+</vbox>

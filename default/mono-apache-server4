@@ -1,0 +1,4 @@
+# Defaults for mono-apache-server4
+
+# Should mono-apache-server4 start apache?
+start_apache=true

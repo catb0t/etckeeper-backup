@@ -1,0 +1,105 @@
+<window>
+ <hbox spacing="0" box-padding="2"><vbox spacing="0" box-padding="2">
+  <table rows="4" cols="3" homogeneous="1" spacing="2">
+   <tr>
+    <td><button label="~1" onclick="vdr ('1') || play (10, 0);" /></td>
+    <td><button label="~2" onclick="vdr ('2') || play (20, 0);" /></td>
+    <td><button label="~3" onclick="vdr ('3') || play (30, 0);" /></td>
+   </tr>
+   <tr>
+    <td><button label="~4" onclick="vdr ('4') || play (40, 0);" /></td>
+    <td><button label="~5" onclick="vdr ('5') || play (50, 0);" /></td>
+    <td><button label="~6" onclick="vdr ('6') || play (60, 0);" /></td>
+   </tr>
+   <tr>
+    <td><button label="~7" onclick="vdr ('7') || play (70, 0);" /></td>
+    <td><button label="~8" onclick="vdr ('8') || play (80, 0);" /></td>
+    <td><button label="~9" onclick="vdr ('9') || play (90, 0);" /></td>
+   </tr>
+   <tr>
+    <td><button image="gtk-media-previous" onclick="vdr ('CHANNELMINUS') || input_previous ();" /></td>
+    <td><button label="~0" onclick="vdr ('0') || play (0, 0);" /></td>
+    <td><button image="gtk-media-next" onclick="vdr ('CHANNELPLUS') || input_next ();" /></td>
+   </tr>
+  </table>
+  <hseparator />
+  <table rows="3" cols="3" homogeneous="1" spacing="2">
+   <tr>
+    <td><button label="~R" onclick="vdr ('RED');" name="gxine_button_red" /></td>
+    <td><button onclick="input_up ();"><arrow type="up" /></button></td>
+    <td><button label="~G" onclick="vdr ('GREEN');" name="gxine_button_green" /></td>
+   </tr>
+   <tr>
+    <td><button onclick="input_left ();"><arrow type="left" /></button></td>
+    <td><button image="gtk-yes" onclick="input_select ();" /></td>
+    <td><button onclick="input_right ();"><arrow type="right" /></button></td>
+   </tr>
+   <tr>
+    <td><button label="~Y" onclick="vdr ('YELLOW');" name="gxine_button_yellow" /></td>
+    <td><button onclick="input_down ();"><arrow type="down" /></button></td>
+    <td><button label="~B" onclick="vdr ('BLUE');" name="gxine_button_blue" /></td>
+   </tr>
+  </table>
+  <table rows="4" cols="2" homogeneous="1" spacing="2">
+   <tr>
+    <td><button label="~Menu 1" onclick="input_menu (1);" tip="~VDR: main menu" /></td>
+    <td><button label="~Menu 5" onclick="input_menu (5);" tip="~VDR: recordings" /></td>
+   </tr>
+   <tr>
+    <td><button label="~Menu 2" onclick="input_menu (2);" tip="~VDR: schedule
+DVB: toggle recording"/></td>
+    <td><button label="~Menu 6" onclick="input_menu (6);" tip="~VDR: setup" /></td>
+   </tr>
+   <tr>
+    <td><button label="~Menu 3" onclick="input_menu (3);" tip="~VDR: channels
+DVB: toggle zoom" /></td>
+    <td><button label="~Menu 7" onclick="input_menu (7);" tip="~VDR: commands
+DVB: now/next"/></td>
+   </tr>
+   <tr>
+    <td><button label="~Menu 4" onclick="input_menu (4);" tip="~VDR: timers
+DVB: pause/resume recording" /></td>
+    <td><button stock="gtk-go-back" onclick="vdr ('BACK');" /></td>
+   </tr>
+  </table>
+  <hseparator />
+  <table rows="1" cols="2" homogeneous="1" spacing="2">
+   <tr>
+    <td><button onclick="--av_speed.v;" tip="~Slower"><image stock="gtk-media-play" /><image stock="gtk-media-rewind" /></button></td>
+    <td><button onclick="++av_speed.v;" tip="~Faster"><image stock="gtk-media-play" /><image stock="gtk-media-forward" /></button></td>
+   </tr>
+  </table>
+  <vbox spacing="0" box-padding="1"><!-- filler --></vbox>
+  <hbox spacing="4" box-padding="0" expand="1" fill="1">
+   <table rows="2" cols="1" homogeneous="1" spacing="2">
+    <tr><td><button image="gtk-media-next" label="~Angle" onclick="event ('ANGLE_NEXT');" /></td></tr>
+    <tr><td><button image="gtk-media-previous" label="~Angle" onclick="event ('ANGLE_PREVIOUS');" /></td></tr>
+   </table>
+   <table rows="2" cols="1" homogeneous="1" spacing="2">
+    <tr><td><button image="gtk-media-record" onclick="vdr ('RECORD');" /></td></tr>
+   <tr><td>
+    <button id="keypad.fs" onclick="vo_fullscreen.toggle ();">
+     <hbox padding="0" box-padding="0">
+      <image stock="gtk-fullscreen" alt="~FS" id="keypad.fs.off"
+	     onshow="if (vo_fullscreen.v) callback ('widget.keypad.fs.off.set_show (0);');"
+	     listen="vo_fullscreen" onchange="widget.keypad.fs.off.set_show (!vo_fullscreen.v);"
+	     />
+      <image stock="gtk-leave-fullscreen" alt="~FS" id="keypad.fs.on"
+	     onshow="if (!vo_fullscreen.v) callback ('widget.keypad.fs.on.set_show (0);');"
+	     listen="vo_fullscreen" onchange="widget.keypad.fs.on.set_show (vo_fullscreen.v);"
+	     />
+     </hbox>
+    </button>
+   </td></tr>
+   </table>
+  </hbox>
+  <vbox spacing="0" box-padding="1"><!-- filler --></vbox>
+  <table rows="1" cols="3" homogeneous="1" spacing="2">
+   <tr>
+    <td><button image="gtk-zoom-in" onclick="vo_zoom.v += 5;" /></td>
+    <td><button image="gtk-zoom-out" onclick="vo_zoom.v -= 5;" /></td>
+    <td><button image="gtk-zoom-100" onclick="vo_zoom.v = 100;" /></td>
+   </tr>
+  </table>
+ </vbox></hbox>
+</window>

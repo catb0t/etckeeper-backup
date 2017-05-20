@@ -1,0 +1,2 @@
+# Site-specific additions and overrides for url-dispatcher-bad-url-helper.
+# For more details, please see /etc/apparmor.d/local/README.

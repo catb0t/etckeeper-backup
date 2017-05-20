@@ -1,0 +1,7 @@
+<apps>
+  <web-application>
+    <name>monodoc</name>
+    <vpath>/monodoc</vpath>
+    <path>/usr/share/monodoc/web</path>
+  </web-application>
+</apps>

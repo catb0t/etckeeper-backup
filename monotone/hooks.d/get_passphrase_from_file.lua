@@ -1,0 +1,1 @@
+/usr/share/monotone/hooks/get_passphrase_from_file.lua

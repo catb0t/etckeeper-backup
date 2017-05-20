@@ -1,0 +1,6 @@
+#! /bin/sh
+
+test -x /usr/sbin/update-dlocatedb || exit 0
+
+# update databases for both files and packages.
+/usr/sbin/update-dlocatedb -b
