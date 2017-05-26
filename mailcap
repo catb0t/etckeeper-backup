@@ -58,6 +58,10 @@ audio/flac; alsaplayer -i gtk2 '%s'; test=test "$DISPLAY" != ""; nametemplate=%s
 audio/x-flac; alsaplayer -i gtk2 '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.flac
 application/x-flac; alsaplayer -i gtk2 '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.flac
 video/mpeg; gxine %s; description="MPEG Video"; test=test -n "$DISPLAY"
+image/svg+xml; inkscape '%s'; description="Scalable Vector Graphics"; test=test -n "$DISPLAY"; print=inkscape --print='|lp' '%s'; edit=inkscape '%s'; compose=inkscape '%s'
+image/svg; inkscape '%s'; description="Scalable Vector Graphics"; test=test -n "$DISPLAY"; print=inkscape --print='|lp' '%s'; edit=inkscape '%s';  compose=inkscape '%s'
+image/svg+xml; false; description="Scalable Vector Graphics"; test=test -z "$DISPLAY"; print=inkscape --print='|lp' '%s'
+image/svg; false; description="Scalable Vector Graphics"; test=test -z "$DISPLAY"; print=inkscape --print='|lp' '%s'
 video/mpeg; vlc %s; description="MPEG Video"; test=test -n "$DISPLAY"
 video/x-mpeg; vlc %s; description="MPEG Video"; test=test -n "$DISPLAY"
 video/mpeg-system; vlc %s; description="MPEG Video"; test=test -n "$DISPLAY"
