@@ -55,4 +55,5 @@ debian-spamd:x:135:145::/var/lib/spamassassin:/bin/sh
 monotone:x:136:147:Monotone,,,:/var/lib/monotone:/bin/false
 statd:x:137:65534::/var/lib/nfs:/bin/false
 gdm:x:138:148:Gnome Display Manager:/var/lib/gdm3:/bin/false
-nvidia-persistenced:x:125:133::/:/sbin/nologin
+nvidia-persistenced:x:125:133:NVIDIA Persistence Daemon,,,:/:/sbin/nologin
+test:x:1001:1001::/home/test:/bin/bash

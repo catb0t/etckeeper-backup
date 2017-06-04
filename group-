@@ -85,3 +85,4 @@ debian-spamd:x:145:
 vboxusers:x:146:
 monotone:x:147:
 gdm:x:148:
+nvidia-persistenced:x:133:
