@@ -56,4 +56,4 @@ monotone:*:17250:0:99999:7:::
 statd:*:17250:0:99999:7:::
 gdm:*:17250:0:99999:7:::
 nvidia-persistenced:*:17300:0:99999:7:::
-test:$6$R9422aTr$b.8Pz/VP2FdNj1RusiOxpCMOTb.n7isz8SfnyhO2ELDbP68AY.zIsGi0mOTl7/dX5mjD4GrYwPquKf9ZJOR78/:17321:0:99999:7:::
+timidity:*:17342:0:99999:7:::

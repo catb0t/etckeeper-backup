@@ -86,4 +86,4 @@ vboxusers:!::
 monotone:!::
 gdm:!::
 nvidia-persistenced:!::
-test:!::
+timidity:!::
