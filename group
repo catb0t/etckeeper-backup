@@ -87,3 +87,4 @@ monotone:x:147:
 gdm:x:148:
 nvidia-persistenced:x:133:
 timidity:x:149:
+winbindd_priv:x:150:

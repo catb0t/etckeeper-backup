@@ -19,7 +19,7 @@ cdrom:*::cat
 floppy:*::
 tape:*::
 sudo:*::cat
-audio:*::pulse
+audio:*::pulse,timidity
 dip:*::cat
 www-data:*::
 backup:*::
