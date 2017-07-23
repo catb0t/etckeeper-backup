@@ -4,3 +4,5 @@
 /bin/bash
 /bin/rbash
 /usr/bin/xonsh
+/usr/bin/tmux
+/usr/bin/screen
