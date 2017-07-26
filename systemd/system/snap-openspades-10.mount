@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount unit for openspades
+
+[Mount]
+What=/var/lib/snapd/snaps/openspades_10.snap
+Where=/snap/openspades/10
+Type=squashfs
+Options=nodev,ro
+
+[Install]
+WantedBy=multi-user.target
