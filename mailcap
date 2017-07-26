@@ -317,36 +317,6 @@ image/x-icon; /usr/bin/display-im6.q16 -nostdin %s; test=test -n "$DISPLAY"
 image/yuv; /usr/bin/display-im6.q16 -nostdin %s; test=test -n "$DISPLAY"
 text/plain; drmips %s; test=test -n "$DISPLAY"
 text/x-scheme; drracket -singleInstance %s; test=test -n "$DISPLAY"
-text/english; /usr/bin/emacs24 -nw %s; needsterminal
-text/plain; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-makefile; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-c++hdr; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-c++src; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-chdr; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-csrc; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-java; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-moc; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-pascal; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-tcl; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-tex; /usr/bin/emacs24 -nw %s; needsterminal
-application/x-shellscript; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-c; /usr/bin/emacs24 -nw %s; needsterminal
-text/x-c++; /usr/bin/emacs24 -nw %s; needsterminal
-text/english; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/plain; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-makefile; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-c++hdr; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-c++src; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-chdr; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-csrc; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-java; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-moc; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-pascal; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-tcl; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-tex; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-application/x-shellscript; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-c; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
-text/x-c++; /usr/bin/emacs24 %s; test=test -n "$DISPLAY"
 text/english; /usr/bin/emacs25 -nw %s; needsterminal
 text/plain; /usr/bin/emacs25 -nw %s; needsterminal
 text/x-makefile; /usr/bin/emacs25 -nw %s; needsterminal
