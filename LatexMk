@@ -1,2 +1,0 @@
-$pdf_previewer     = 'start xpdf';
-$pdf_update_method = 1;
