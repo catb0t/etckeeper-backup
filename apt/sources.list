@@ -50,3 +50,5 @@ deb http://security.ubuntu.com/ubuntu zesty-security universe
 deb http://security.ubuntu.com/ubuntu zesty-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu yakkety-security multiverse
 # deb-src http://ppa.launchpad.net/snaipewastaken/ppa/ubuntu zesty main
+deb https://dl.winehq.org/wine-builds/ubuntu/ zesty main
+# deb-src https://dl.winehq.org/wine-builds/ubuntu/ zesty main

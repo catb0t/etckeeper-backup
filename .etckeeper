@@ -520,6 +520,7 @@ maybe chmod 0644 'apt/sources.list.d/indicator-multiload-ubuntu-stable-daily-yak
 maybe chmod 0644 'apt/sources.list.d/indicator-multiload-ubuntu-stable-daily-yakkety.list.distUpgrade'
 maybe chmod 0644 'apt/sources.list.d/indicator-multiload-ubuntu-stable-daily-yakkety.list.save'
 maybe chmod 0644 'apt/sources.list.d/nodesource.list'
+maybe chmod 0644 'apt/sources.list.d/nodesource.list.save'
 maybe chmod 0644 'apt/sources.list.d/numix-ubuntu-ppa-yakkety.list'
 maybe chmod 0644 'apt/sources.list.d/numix-ubuntu-ppa-yakkety.list.distUpgrade'
 maybe chmod 0644 'apt/sources.list.d/numix-ubuntu-ppa-yakkety.list.save'
