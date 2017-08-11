@@ -1144,6 +1144,8 @@ x-scheme-handler/ghelp; yelp %s; test=test -n "$DISPLAY"
 x-scheme-handler/help; yelp %s; test=test -n "$DISPLAY"
 x-scheme-handler/info; yelp %s; test=test -n "$DISPLAY"
 x-scheme-handler/man; yelp %s; test=test -n "$DISPLAY"
+x-scheme-handler/zoommtg; /usr/bin/zoom %s; test=test -n "$DISPLAY"
+application/x-zoom; /usr/bin/zoom %s; test=test -n "$DISPLAY"
 video/x-msvideo; gxine %s; description="MS Video (AVI)"; test=test -n "$DISPLAY"
 video/quicktime; gxine %s; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
 text/plain; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
