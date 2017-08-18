@@ -1,2 +1,2 @@
-# deb http://ppa.launchpad.net/indicator-multiload/stable-daily/ubuntu zesty main # disabled on upgrade to zesty
+deb http://ppa.launchpad.net/indicator-multiload/stable-daily/ubuntu zesty main # disabled on upgrade to zesty
 # deb-src http://ppa.launchpad.net/indicator-multiload/stable-daily/ubuntu yakkety main
