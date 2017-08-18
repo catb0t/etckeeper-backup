@@ -55,21 +55,4 @@ iU  linux-image-generic                                              4.10.0.32.3
 # list of installed kernel packages:
 4.10.0-26-generic 4.10.0-26.30
 4.10.0-28-generic 4.10.0-28.32
-4.10.0-30-generic 4.10.0-30.34
-4.10.0-32-generic 4.10.0-32.36
-# list of different kernel versions:
-4.10.0-32.36
-4.10.0-30.34
-4.10.0-28.32
-4.10.0-26.30
-# Installing kernel: 4.10.0-32.36 (4.10.0-32-generic)
-# Running kernel: 4.10.0-30.34 (4.10.0-30-generic)
-# Last kernel: 4.10.0-32.36
-# Previous kernel: 4.10.0-30.34
-# Kernel versions list to keep:
-4.10.0-30.34
-4.10.0-32.36
-# Kernel packages (version part) to protect:
-4\.10\.0-30-generic
-4\.10\.0-32-generic
-*/
+4.10.0-30-generic 
